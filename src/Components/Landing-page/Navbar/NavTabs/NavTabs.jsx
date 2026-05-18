@@ -9,7 +9,7 @@ function NavTabs() {
     </div>
 
     <div className="nav-tabs-container-hidden">
-      <a href="#" className="nav-link"><img src="menu_24dp_2D3748_FILL0_wght400_GRAD0_opsz24.svg" alt="servicesicon" className="icons" id="menu-icon" /></a>
+     <img src="menu_24dp_2D3748_FILL0_wght400_GRAD0_opsz24.svg" alt="servicesicon" className="icons nav-link" id="menu-icon" />
     </div>
     </>
   )
