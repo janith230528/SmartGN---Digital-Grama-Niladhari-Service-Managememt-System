@@ -1,4 +1,3 @@
-import React from 'react'
 import './Logo.css'
 import logoImage from '../../../../assets/SmartGN logo/3.png';
 
