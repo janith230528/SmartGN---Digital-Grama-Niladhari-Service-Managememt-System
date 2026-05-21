@@ -11,7 +11,7 @@ function NavTabs() {
     </div>
 
     <div className="nav-tabs-container-hidden">
-     <button onClick={()=>setOpen(!open)}><img src="menu_24dp_2D3748_FILL0_wght400_GRAD0_opsz24.svg" alt="servicesicon" className="icons nav-link" id="menu-icon" /></button>
+     <button onClick={() => setOpen((prev) => !prev)}><img src="menu_24dp_2D3748_FILL0_wght400_GRAD0_opsz24.svg" alt="servicesicon" className="icons nav-link" id="menu-icon" /></button>
     </div>
     {open && <div className="dropdown-content">
        <a href="#home" className="nav-link"><img src="home_24dp_2D3748_FILL0_wght400_GRAD0_opsz24.svg" alt="homeicon" className="icons" />Home</a>
