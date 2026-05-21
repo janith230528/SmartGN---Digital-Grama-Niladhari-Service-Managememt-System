@@ -98,7 +98,7 @@ function Services() {
           <div className="card-content">
             <img
               src="flood_24dp_D69E2E_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="track-requests-icon"
+              alt="disaster-relief-icon"
             />
             Disaster Relief
             <img
