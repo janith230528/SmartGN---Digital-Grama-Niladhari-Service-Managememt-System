@@ -9,7 +9,7 @@
 }
 
 .card{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     padding: 30px;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 .card-content{
-  border:1px solid red;
+  /* border:1px solid red; */
   justify-content: center;
   width: 100%;
   display: flex;
