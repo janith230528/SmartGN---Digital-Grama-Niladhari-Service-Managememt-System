@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import Hero from "./Components/Landing-page/Hero/Hero.jsx";
 import Navbar from "./Components/Landing-page/Navbar/Navbar.jsx";
 import Services from "./Components/Landing-page/Services/Services.jsx";
-import AuthLayout from "./Components/Auth/AuthLayout.jsx";
-import RoleSelection from "./Components/Auth/RoleSelection.jsx";
-import VillageResidentLogin from "./Components/Auth/VillageResidentLogin.jsx";
-import VillageResidentRegister from "./Components/Auth/VillageResidentRegister.jsx";
-import GNOfficerLogin from "./Components/Auth/GNOfficerLogin.jsx";
 
 function App() {
   const [view, setView] = useState("landing"); // 'landing', 'role-selection', 'login', 'register', 'officer-login', 'logged-in'
