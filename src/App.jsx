@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Hero from "./Components/Landing-page/Hero/Hero.jsx";
 import Navbar from "./Components/Landing-page/Navbar/Navbar.jsx";
 import Services from "./Components/Landing-page/Services/Services.jsx";
+import Chatbot from './Components/Chatbot.jsx';
 
 function App() {
   const [view, setView] = useState("landing"); // 'landing', 'role-selection', 'login', 'register', 'officer-login', 'logged-in'
