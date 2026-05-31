@@ -1,4 +1,3 @@
-
 import Logo from './Logo/Logo';
 import NavTabs from './NavTabs/NavTabs';
 import LanguageSelector from './LanguageSelector/LanguageSelector';
@@ -19,6 +18,7 @@ return (
         <LanguageSelector />
       </div>
    </nav>
+
   );
 }
 

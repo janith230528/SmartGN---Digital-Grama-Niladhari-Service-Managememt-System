@@ -12,6 +12,10 @@
   display: none;
 }
 
+.dropdown-content {
+  display: none;
+}
+
 .nav-link {
   /* border: 1px solid black; */
   text-decoration: none;
@@ -67,6 +71,21 @@
   } /* Hide nav links on mobile */
 
   .icons { height: 16px; margin: 2px} 
+
+  .dropdown-content {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     height: 150px;
+     margin: 270px 0px 0px -50px;
+     position: absolute;
+     padding: 20px 20px 0px 50px;
+     background-color: #EBF8FF;
+     width: 160px;
+     box-shadow: 15px 15px 30px rgba(0,0,0,0.2);
+     border-radius: 0px 30px 30px 0px;
+     /* border: 1px solid red; */
+}
 
 }
 
