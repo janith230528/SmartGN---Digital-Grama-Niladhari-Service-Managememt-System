@@ -1,7 +1,7 @@
 import './Hero.css'
 import HeroImage from '../../../assets/Hero.png' 
 
-function Hero() {
+function Hero({ onNavigate }) {
   return (
     <>
     <section id="home" className="section">
@@ -15,8 +15,22 @@ function Hero() {
         </div>
 
         <div className="buttons">
-          <a href="#" className="btn" id="login-btn">Login<img src="login_24dp_F7FAFC_FILL0_wght400_GRAD0_opsz24.svg" alt="login-icon" /></a>
-          <a href="#" className="btn" id="register-btn">Register<img src="how_to_reg_24dp_F7FAFC_FILL0_wght400_GRAD0_opsz24.svg" alt="register-icon" /></a>
+          <button 
+            onClick={() => onNavigate('role-selection')} 
+            className="btn cursor-pointer" 
+            id="login-btn"
+          >
+            Login
+            <img src="login_24dp_F7FAFC_FILL0_wght400_GRAD0_opsz24.svg" alt="login-icon" />
+          </button>
+          <button 
+            onClick={() => onNavigate('register')} 
+            className="btn cursor-pointer" 
+            id="register-btn"
+          >
+            Register
+            <img src="how_to_reg_24dp_F7FAFC_FILL0_wght400_GRAD0_opsz24.svg" alt="register-icon" />
+          </button>
         </div>
     </section>
     </>
