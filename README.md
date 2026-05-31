@@ -109,20 +109,102 @@ This platform reduces paperwork and improves accessibility for village-level adm
 
 ---
 
-## Repository Structure
+## 📁 Project Structure
 
-```bash
-SmartGN/
+```text
+smartgn/
+├── client/                    # React Frontend
 │
-├── index.html
-├── assets/
-├── css/
-├── js/
-├── images/
-├── database/
-└── README.md
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── assets/                # Images, icons, fonts
+│   ├── components/            # Reusable UI Components
+│   │   ├── common/
+│   │   ├── layout/
+│   │   └── chatbot/
+│   │
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── LangContext.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   └── useFetch.js
+│   │
+│   ├── i18n/
+│   │   ├── en.json
+│   │   ├── si.json
+│   │   └── ta.json
+│   │
+│   ├── pages/
+│   │   ├── auth/
+│   │   ├── resident/
+│   │   ├── gn/
+│   │   └── admin/
+│   │
+│   ├── routes/
+│   │   ├── AppRouter.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   ├── certificateService.js
+│   │   ├── appointmentService.js
+│   │   ├── allowanceService.js
+│   │   └── disasterService.js
+│   │
+│   ├── utils/
+│   │   ├── formatDate.js
+│   │   └── validators.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── server/                    # Node.js + Express Backend
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── uploads/
+│   ├── app.js
+│   ├── server.js
+│   └── package.json
+│
+├── docs/                      # Project Documentation
+├── README.md
+├── .gitignore
+└── package.json
 ```
 
+## 👥 Team Collaboration
+
+This project is developed collaboratively using GitHub.
+
+### Workflow
+
+```text
+main
+│
+└── develop
+     │
+     ├── feature/authentication
+     ├── feature/dashboard
+     ├── feature/appointments
+     ├── feature/certificates
+     ├── feature/chatbot
+     └── feature/admin-panel
+```
+
+- All team members work on separate feature branches.
+- Changes are submitted through Pull Requests.
+- Code is reviewed before merging into the `develop` branch.
+- Only tested and stable code is merged into the `main` branch.
 ---
 
 ## [Click here to see our Figma Design](https://www.figma.com/design/0DP18Q3Lb3On3EAlbc4lFL/SmartGN?node-id=0-1&t=IHolQj4QQj0MT4Kj-1)
